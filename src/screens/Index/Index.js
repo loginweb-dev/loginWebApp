@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, AsyncStorage } from 'react-native';
 
 function Index({ navigation }) {
   return (
@@ -7,7 +7,7 @@ function Index({ navigation }) {
       <Text>Home Screen</Text>
       <Button
         title="Go to Details"
-        onPress={() => navigation.navigate('Details')}
+        onPress={() => {AsyncStorage.setItem('isLoggedIn', '0');navigation.navigate('Details')}}
       />
     </View>
   );

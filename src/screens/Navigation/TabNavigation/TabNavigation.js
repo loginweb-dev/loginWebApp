@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 // Components
 import StackNavigation from '../StackNavigation/StackNavigation';
-import Details from '../Details/Details';
+import Details from '../../Details/Details';
 
 const Tab = createBottomTabNavigator();
 
